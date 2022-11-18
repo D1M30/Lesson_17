@@ -1,0 +1,31 @@
+
+.button{
+   border-radius: 4px;
+   line-height: 1.25;
+   letter-spacing: 0.5px;
+ 
+}
+
+.button--full{
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   color:rgba(255, 255, 255, 1);
+   padding: 16px 40px;
+}
+
+.button:hover{
+   background: linear-gradient(55.95deg, #ec8b40 0%, #d34a0f 100%);
+}
+
+
+
+.button--border{
+   border: 1px solid  #FF3F3A ;
+   color:  #FF3F3A ;
+   padding: 15px 40px;
+}
+.button--border:hover{
+   color:rgba(255, 255, 255, 1);
+   padding: 16px 41px;
+   border: none;
+}
+

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+  font-family: "Lato";
+  color: rgba(66, 69, 81, 1);
+}
+
+.wrapper{
+overflow: hidden;
+min-height: 100%;
+position: relative;
+
+display: flex;
+flex-direction: column;
+}
+
+ .wrapper > main{
+   flex-grow: 1;
+ }
+
+ [class*="__container"]{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+ /* ===========HEADER=========== */
+
+ .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: #f2aa81;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  
+}
+
+.header__logo {
+  
+}
+
+.header__menu {
+  flex-grow: 1 ;
+}
+.header__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 10px;
+}
+.menu__item {
+}
+.menu__link {
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.action-header__button{
+
+}
+
+.action-header__auth {
+  padding-left: 32px;
+  position: relative;
+}
+.action-header__auth:hover{
+  text-decoration: underline;
+}
+
+.action-header__auth::before{
+  content: "";
+  background: url(../img/header/icon/user.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  position:absolute ;
+}
+/* ============================= */
+.title {
+  color: rgba(30, 33, 44, 1);
+  font-weight: 900;
+  margin-bottom: 60px;
+  font-size: 46px;
+}
+
+
+.main-block {
+  padding: 200px 0 80px;
+  background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+}
+
+
+.main-block__container {
+}
+
+.main-body {
+  margin-bottom: 189px;
+  display: flex;
+}
+
+.main-body__column {
+  flex: 0 1 50%;
+  
+}
+
+.column-left{
+  padding-right:40px ;
+  align-self: center;
+}
+
+.main-body__play {
+  font-weight: 700;
+  color: rgba(30, 33, 44, 1);
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.main-body__play::before{
+  content: "";
+  background:rgba(255, 63, 58, 1) url(../img/main-block/play.png)  0 0 no-repeat; 
+  flex: 0 0 52px;
+  background-position:center ;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  
+}
+
+.main-body__play::after{
+  content: "";
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 64, 58, 0.12);
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(1.6);
+  animation: play ease infinite 1s  ;
+}
+
+.main-body__play:hover::before{
+  background:rgb(126, 164, 218) url(../img/main-block/play.png)  0 0 no-repeat; 
+  background-position:center ;
+  transition: all 0.5s;
+}
+
+
+@keyframes play{
+
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    opacity: 0.1;
+    transform: scale(2.1);
+  }
+}
+
+.main-body__title {
+  font-size :64px; 
+  line-height: 1.3;
+  letter-spacing:1px;
+}
+.main-body__buttons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+
+.main-body__column {
+}
+.main-body__picture {
+  max-width: 100%;
+  margin-left: 47px;
+}
+
+.main-achievement {
+  display: flex;
+  color: rgba(30, 33, 44, 1);
+  justify-content: space-between;
+}
+.main-achievement__item {
+  display: flex;
+  gap: 12px;
+}
+
+.main-achievement__dot{
+  content: "";
+  background: url(../img/main-block/dot.png) 0 0 no-repeat;
+  flex: 0 0 8px;
+  height: 8px;
+  align-self: center;
+}
+
+.main-achievement__number {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+.main-achievement__text {
+  align-self: center;
+line-height: 1.6;
+}
+/* =============================== */
+.about-block{
+}
+
+.about-block__container {
+display: flex;
+padding: 180px 0;
+gap: 135px;
+}
+
+
+.about-block__pic {
+  flex: 0 1 58.7%;
+}
+.about-block__pic img{
+  border-radius: 4px;
+  max-width:100% ;
+}
+
+.about-block__column {
+}
+.subtitle {
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.title {
+  margin-bottom: 40px;
+  font-size: 46px;
+}
+.about-block__list {
+  margin-bottom: 22px;
+  min-width: 390px;
+}
+.about-block__item {
+  color: rgba(66, 69, 81, 1);
+  line-height: 1.6;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.about-block__item::before{
+  content: "";
+  background: url(../img/about-block/check.png) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  position:absolute ;
+  left: 0;
+  top: 6px;
+  
+}
+
+/* =============================== */
+.courses-block {
+}
+.courses-block__container {
+}
+
+.top-part {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.top-part__header-text {
+  flex-grow: 1;
+}
+.subtitle {
+}
+.title {
+  margin-bottom: 0;
+}
+
+
+.top-part__button{
+  align-self: flex-end;
+}
+
+.card-block__column-left{
+  flex: 1 0 50%;
+
+}
+
+.card-block__column-right{
+  flex: 1 0 50%;
+}
+/* =============================== */
+
+@media (max-width:1090px){
+.header__action{
+flex-direction: column;
+gap: 20px;
+}
+.main-body__buttons{
+flex-wrap: nowrap;
+}
+.about-block__container{
+flex-direction: column;
+align-items:center ;}
+ 
+.card-block{
+  flex-direction: column;
+  align-items: center;
+  
+}
+}
+
+@media (max-width:705px){
+  [class*="__container"] {
+		max-width: 750px;
+		gap: 25px;
+  }
+
+  .header__container{
+    flex-direction: column;
+    margin-bottom: 2px;
+  }
+
+.about-block__list{
+    padding-left: 10px;
+  }
+
+  .title--about{
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .subtitle--about{
+    padding-left: 10px;
+  }
+.main-body{
+  padding-top: 60px;
+  flex-direction: column;
+
+}
+.main-body__title{
+  margin-bottom: 15px;
+  text-align:center ;
+}
+.main-body__buttons{
+  align-items:center ;
+  
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.main-achievement__item{
+ flex-direction: column;
+
+}
+.main-achievement__number {
+  font-size: 30px;
+  text-align: center;
+  
+}
+.main-achievement{
+  font-size: 10px;
+  
+}
+.main-achievement__dot{
+  display:none ;
+}
+}
+
+@media(max-width:1099px){
+  .card-block__item{
+    flex-direction: column;
+  }
+ .card-block__photo{
+  text-align: center;
+  
+ }
+
+ .info-block{
+  border: none;
+ }
+}
+  
